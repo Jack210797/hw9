@@ -51,6 +51,20 @@ html {
   margin-inline: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   background-color: var(--color-silver);
   padding-top: 79px;
@@ -73,12 +87,12 @@ html {
   color: var(--color-black);
   display: block;
   padding: var(--gap-sm);
-  transition: scale 0.1s;
+  transition: scale 0.25s;
 }
 
 .navbar-link:hover {
   color: var(--color-black);
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .content {
