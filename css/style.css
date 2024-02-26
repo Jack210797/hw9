@@ -39,7 +39,6 @@ html {
   font-family: var(--font-family);
   font-weight: normal;
   line-height: var(--line-height-lg);
-  overflow-x: hidden;
 }
 
 .container {
@@ -81,6 +80,7 @@ html {
   line-height: var(--line-height-sm);
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight-regular);
+  flex-wrap: wrap;
 }
 
 .one {
@@ -104,23 +104,24 @@ html {
 }
 
 .content {
-  width: var(--container-sm);
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: flex-start;
 }
+
 .content__title {
   font-weight: var(--font-weight-medium);
   font-size: 48px;
   margin: -7px 11px;
+  line-height: 78.75px;
 }
 .content__text {
   font-weight: var(--font-weight-regular);
   padding: 1px 12px;
   color: var(--color-text);
   line-height: var(--line-height-sm);
-  min-width: 550px;
 }
 .content__button {
   background-color: var(--color-accent);
@@ -206,7 +207,7 @@ html {
 }
 
 .video__iframe {
-  min-width: 1110px;
+  min-width: -webkit-fill-available;
   min-height: 600px;
   border: none;
 }
