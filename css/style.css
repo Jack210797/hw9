@@ -39,6 +39,7 @@ html {
   font-family: var(--font-family);
   font-weight: normal;
   line-height: var(--line-height-lg);
+  overflow-x: hidden;
 }
 
 .container {
@@ -175,9 +176,6 @@ html {
   column-gap: 20px;
 }
 
-.progress__item--text-box {
-  flex-direction: column;
-}
 .progress__number {
   font-size: 21px;
   line-height: 24.61px;
