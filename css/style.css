@@ -231,3 +231,30 @@ html {
   font-weight: var(--font-weight-regular);
   margin: 12px 0px;
 }
+
+@media (max-width: 1024px) {
+  .video__iframe {
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__iframe {
+    min-height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .video__iframe {
+    min-height: 20vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar__list {
+    justify-content: space-between;
+  }
+  .container--flex {
+    justify-content: center;
+  }
+}
