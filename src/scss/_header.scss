@@ -1,0 +1,73 @@
+.header {
+  background-color: $color-silver;
+  padding-top: 79px;
+  padding-bottom: 141px;
+}
+
+.navbar {
+  margin-bottom: 162px;
+
+&__list {
+  display: flex;
+  column-gap: 22.6px;
+  font-size: 16px;
+  line-height: $line-height-sm;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight-regular;
+  flex-wrap: wrap;
+}
+
+&__link {
+  color: $color-black;
+  display: block;
+  padding: $gap-sm;
+  transition: scale 0.25s;
+}
+
+&__link:hover {
+  color: $color-black;
+  transform: scale(1.1);
+}
+
+&__link--active {
+  color: $color-accent;
+}
+}
+
+.one {
+  color: $color-accent;
+}
+
+.content {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+
+&__title {
+  font-weight: $font-weight-medium;
+  font-size: 48px;
+  margin: -7px 11px;
+  line-height: 78.75px;
+}
+&__text {
+  font-weight: $font-weight-regular;
+  padding: 1px 12px;
+  color: $color-text;
+  line-height: $line-height-sm;
+}
+&__button {
+  background-color: $color-accent;
+  font-weight: $font-weight-regular;
+  color: $color-white;
+  padding: 0.5em;
+  min-width: 225px;
+  min-height: 65px;
+  letter-spacing: $letter-spacing;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -6px 10px;
+}
+}
