@@ -17,10 +17,10 @@
 &__text {
   font-weight: $font-weight-regular;
   line-height: $line-height-sm;
-  @include font-size(16px);
+  @include font-size();
   color: $color-text;
   text-align: center;
-  margin: -12px 0px;
+  @include margin(-12px 0);
 }
 }
 
@@ -34,7 +34,7 @@
 .progress {
   background-color: $color-accent;
   color: $color-white;
-  padding: 100px 0;
+  @include padding(100px 0);
 
 
 &__item {
@@ -48,7 +48,7 @@
   font-weight: $font-weight-regular;
   @include display(flex);
   flex-direction: column;
-  padding: 3px 1px;
+  @include padding(3px 1px);
 }
 &__text {
   @include font-size(16px);

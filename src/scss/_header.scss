@@ -22,7 +22,7 @@
 &__link {
   color: $color-black;
   @include display(block);
-  padding: $gap-sm;
+  @include padding($gap-sm);
   transition: scale 0.25s;
 }
 
@@ -50,12 +50,12 @@
 &__title {
   font-weight: $font-weight-medium;
   @include font-size(48px);
-  margin: -7px 11px;
+  @include margin(-7px 11px);
   line-height: 78.75px;
 }
 &__text {
   font-weight: $font-weight-regular;
-  padding: 1px 12px;
+  @include padding(1px 12px);
   color: $color-text;
   line-height: $line-height-sm;
 }
@@ -63,13 +63,13 @@
   background-color: $color-accent;
   font-weight: $font-weight-regular;
   color: $color-white;
-  padding: 0.5em;
+  @include padding(0.5em);
   min-width: 225px;
   min-height: 65px;
   letter-spacing: $letter-spacing;
   @include display(flex);
   align-items: center;
   justify-content: center;
-  margin: -6px 10px;
+  @include margin(-6px 10px);
 }
 }
