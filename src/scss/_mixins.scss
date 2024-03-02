@@ -2,26 +2,26 @@
   min-height: $min-height;
   }
 
-  @mixin display ($display) {
-    display: $display;
+@mixin display ($display) {
+  display: $display;
   }
 
-  @mixin font-size ($font-size: 16px) {
-    font-size: $font-size;
+@mixin font-size ($font-size: 16px) {
+  font-size: $font-size;
   }
 
-  @mixin padding-top ($padding-top) {
-    padding-top: $padding-top;
-    }
+@mixin padding-top ($padding-top) {
+  padding-top: $padding-top;
+  }
 
-  @mixin padding-bottom ($padding-bottom) {
-    padding-bottom: $padding-bottom;
-    }
+@mixin padding-bottom ($padding-bottom) {
+  padding-bottom: $padding-bottom;
+  }
 
-   @mixin padding ($padding) {
-    padding: $padding;
-    }
+@mixin padding ($padding) {
+  padding: $padding;
+ }
 
-    @mixin margin ($margin) {
-      margin: $margin;
-      }
+@mixin margin ($margin) {
+  margin: $margin;
+  }
