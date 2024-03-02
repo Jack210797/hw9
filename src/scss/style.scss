@@ -1,102 +1,12 @@
-  $color-black: #000;
-  $color-white: #fff;
-  $color-white-smoke: #f9f9f9;
-  $color-silver: #eeeff1;
-  $color-text: #727272;
-  $color-accent: #34547a;
-
-  $font-size: 16px;
-  $font-family: "Roboto", sans-serif;
-  $font-weight-regular: 400;
-  $font-weight-medium: 500;
-
-  $container-primary: 1110px;
-  $container-sm: 540px;
-
-  $line-height-sm: 26.25px;
-  $line-height-lg: 37.5px;
-
-  $letter-spacing: 0.1em;
-
-  $gap: 20px;
-  $gap-sm: calc($gap/2);
-  $gap-lg: calc($gap*2);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-
-html {
-  font-size: $font-size;
-  font-family: $font-family;
-  font-weight: normal;
-  line-height: $line-height-lg;
-}
-
-.container {
-  width: min(100% - $gap-lg, $container-primary);
-  margin-inline: auto;
-}
-
-.container--sm {
-  width: min(100% - $gap-lg, $container-sm);
-  margin-inline: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: none;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+//common
+@import "common";
+//variables and mixins
+@import "variables";
 //header
 @import "header";
 //main
 @import "main";
 //footer
 @import "footer";
-
-
-@mixin min-height ($min-height) {
-min-height: $min-height;
-}
-
-@media (max-width: 1024px) {
-  .video__iframe {
-    @include min-height(40vh);
-  }
-}
-
-@media (max-width: 768px) {
-  .video__iframe {
-    @include min-height(30vh);
-  }
-}
-
-@media (max-width: 480px) {
-  .video__iframe {
-    @include min-height(20vh);
-  }
-}
-
-@media (max-width: 375px) {
-  .navbar__list {
-    justify-content: space-between;
-  }
-  .container--flex {
-    justify-content: center;
-  }
-}
+//media config
+@import "media";
