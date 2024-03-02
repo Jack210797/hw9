@@ -4,13 +4,13 @@
   @include padding(50px 0);
   @include margin(-13px 0px);
 
-
 &__text {
   font-weight: $font-weight-medium;
   @include font-size(21px);
   line-height: 24.61px;
   @include margin(-1px 0);
 }
+
 &__copyright {
   @include font-size(13px);
   line-height: 21.33px;
