@@ -46,10 +46,10 @@
   align-items: flex-start;
 
   &__title {
-  font-weight: $font-weight-medium;
-  @include font-size(48px);
-  @include margin(-7px 11px);
-  line-height: 78.75px;
+    font-weight: $font-weight-medium;
+    @include font-size(48px);
+    @include margin(-7px 11px);
+    line-height: 78.75px;
   }
 
   &__text {

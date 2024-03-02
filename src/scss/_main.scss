@@ -2,24 +2,24 @@
   @include padding-top(112px);
   @include padding-bottom(100px);
 
-&__title {
-  align-items: center;
-  font-weight: $font-weight-medium;
-  @include font-size(32px);
-  line-height: $line-height-lg;
-  @include padding-bottom(50px);
-  @include display(flex);
-  flex-direction: column;
-}
+  &__title {
+    align-items: center;
+    font-weight: $font-weight-medium;
+    @include font-size(32px);
+    line-height: $line-height-lg;
+    @include padding-bottom(50px);
+    @include display(flex);
+    flex-direction: column;
+  }
 
-&__text {
-  font-weight: $font-weight-regular;
-  line-height: $line-height-sm;
-  @include font-size();
-  color: $color-text;
-  text-align: center;
-  @include margin(-12px 0);
-}
+  &__text {
+    font-weight: $font-weight-regular;
+    line-height: $line-height-sm;
+    @include font-size();
+    color: $color-text;
+    text-align: center;
+    @include margin(-12px 0);
+  }
 }
 
 .container--flex {
@@ -34,33 +34,32 @@
   color: $color-white;
   @include padding(100px 0);
 
+  &__item {
+    @include display(flex);
+    column-gap: 20px;
+  }
 
-&__item {
-  @include display(flex);
-  column-gap: 20px;
-}
+  &__number {
+    @include font-size(21px);
+    line-height: 24.61px;
+    font-weight: $font-weight-regular;
+    @include display(flex);
+    flex-direction: column;
+    @include padding(3px 1px);
+  }
 
-&__number {
-  @include font-size(21px);
-  line-height: 24.61px;
-  font-weight: $font-weight-regular;
-  @include display(flex);
-  flex-direction: column;
-  @include padding(3px 1px);
-}
+  &__text {
+    @include font-size(16px);
+    line-height: $line-height-sm;
+    @include display(flex);
+    flex-direction: column-reverse;
+  }
 
-&__text {
-  @include font-size(16px);
-  line-height: $line-height-sm;
-  @include display(flex);
-  flex-direction: column-reverse;
-}
-
-&__img {
-  order: -1;
-  width: 50px;
-  height: 50px;
-}
+  &__img {
+    order: -1;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .about__me {
@@ -71,9 +70,9 @@
 .video {
   @include padding-bottom(100px);
 
-&__iframe {
-  min-width: -webkit-fill-available;
-  min-height: 600px;
-  border: none;
-}
+  &__iframe {
+    min-width: -webkit-fill-available;
+    min-height: 600px;
+    border: none;
+  }
 }
