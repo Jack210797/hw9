@@ -1,16 +1,33 @@
+@mixin display ($display) {
+  display: $display;
+}
+
+@mixin font-size ($font-size) {
+  font-size: $font-size;
+}
+
+@mixin padding-top ($padding-top) {
+  padding-top: $padding-top;
+  }
+
+@mixin padding-bottom ($padding-bottom) {
+  padding-bottom: $padding-bottom;
+  }
+
+
 .header {
   background-color: $color-silver;
-  padding-top: 79px;
-  padding-bottom: 141px;
+  @include padding-top(79px);
+  @include padding-bottom(141px);
 }
 
 .navbar {
   margin-bottom: 162px;
 
 &__list {
-  display: flex;
+  @include display(flex);
   column-gap: 22.6px;
-  font-size: 16px;
+  @include font-size(16px);
   line-height: $line-height-sm;
   letter-spacing: $letter-spacing;
   font-weight: $font-weight-regular;
@@ -19,7 +36,7 @@
 
 &__link {
   color: $color-black;
-  display: block;
+  @include display(block);
   padding: $gap-sm;
   transition: scale 0.25s;
 }
@@ -40,14 +57,14 @@
 
 .content {
   max-width: 550px;
-  display: flex;
+  @include display(flex);
   flex-direction: column;
   gap: 60px;
   align-items: flex-start;
 
 &__title {
   font-weight: $font-weight-medium;
-  font-size: 48px;
+  @include font-size(48px);
   margin: -7px 11px;
   line-height: 78.75px;
 }
@@ -65,7 +82,7 @@
   min-width: 225px;
   min-height: 65px;
   letter-spacing: $letter-spacing;
-  display: flex;
+  @include display(flex);
   align-items: center;
   justify-content: center;
   margin: -6px 10px;

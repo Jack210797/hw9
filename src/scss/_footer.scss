@@ -7,12 +7,12 @@
 
 &__text {
   font-weight: $font-weight-medium;
-  font-size: 21px;
+  @include font-size(21px);
   line-height: 24.61px;
   margin: -1px 0px;
 }
 &__copyright {
-  font-size: 13px;
+  @include font-size(13px);
   line-height: 21.33px;
   font-weight: $font-weight-regular;
   margin: 12px 0px;

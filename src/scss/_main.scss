@@ -1,23 +1,23 @@
 
 
 .about {
-  padding-top: 112px;
-  padding-bottom: 100px;
+  @include padding-top(112px);
+  @include padding-bottom(100px);
 
 
 &__title {
   align-items: center;
   font-weight: $font-weight-medium;
-  font-size: 32px;
+  @include font-size(32px);
   line-height: $line-height-lg;
-  padding-bottom: 50px;
-  display: flex;
+  @include padding-bottom(50px);
+  @include display(flex);
   flex-direction: column;
 }
 &__text {
   font-weight: $font-weight-regular;
   line-height: $line-height-sm;
-  font-size: 16px;
+  @include font-size(16px);
   color: $color-text;
   text-align: center;
   margin: -12px 0px;
@@ -25,7 +25,7 @@
 }
 
 .container--flex {
-  display: flex;
+  @include display(flex);
   gap: 49px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -38,22 +38,22 @@
 
 
 &__item {
-  display: flex;
+  @include display(flex);
   column-gap: 20px;
 }
 
 &__number {
-  font-size: 21px;
+  @include font-size(21px);
   line-height: 24.61px;
   font-weight: $font-weight-regular;
-  display: flex;
+  @include display(flex);
   flex-direction: column;
   padding: 3px 1px;
 }
 &__text {
-  font-size: 16px;
+  @include font-size(16px);
   line-height: $line-height-sm;
-  display: flex;
+  @include display(flex);
   flex-direction: column-reverse;
 }
 &__img {
@@ -64,12 +64,12 @@
 }
 
 .about__me {
-  padding-top: 100px;
-  padding-bottom: 57px;
+  @include padding-top(100px);
+  @include padding-bottom(57px);
 }
 
 .video {
-  padding-bottom: 100px;
+  @include padding-bottom(100px);
 
 &__iframe {
   min-width: -webkit-fill-available;
