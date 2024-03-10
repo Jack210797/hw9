@@ -1,0 +1,94 @@
+.navbar {
+  margin-bottom: 162px;
+
+   &__list {
+    @include display(flex);
+    column-gap: 22.6px;
+    @include font-size(16px);
+    line-height: $line-height-sm;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight-regular;
+    flex-wrap: wrap;
+
+    @media (max-width: $xx) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $color-black;
+    @include display(block);
+    @include padding($gap-sm);
+    transition: scale 0.25s;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-black;
+    transform: scale(1.1);
+  }
+
+  &__link--active {
+    color: $color-accent;
+  }
+
+  &__btn {
+    width: 30px;
+    height: 22.5px;
+    position: relative;
+    margin: 0;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    @media (min-width: 669px) {
+      display: none;
+    }
+
+    &.active span {
+      &:nth-child(1) {
+        top: 9px;
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        left: -30px;
+      }
+
+      &:nth-child(3) {
+        top: 9px;
+        transform: rotate(-135deg);
+      }
+   }
+
+    &-row {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: $color-black;
+      border-radius: 4px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+  }
+}
+
+.one {
+  color: $color-accent;
+}

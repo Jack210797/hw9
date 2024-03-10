@@ -27,6 +27,18 @@
   gap: 49px;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $lg) and (max-width: $xl) {
+    gap: 21px;
+  }
+
+  @media (max-width: $lg) {
+    gap: 52px;
+  }
+
+  @media (max-width: $ux) {
+    justify-content: center;
+  }
 }
 
 .progress {
@@ -37,6 +49,10 @@
   &__item {
     @include display(flex);
     column-gap: 20px;
+
+    @media (max-width: $lg) {
+      flex-basis: 21%;
+    }
   }
 
   &__number {
@@ -74,5 +90,18 @@
     min-width: -webkit-fill-available;
     min-height: 600px;
     border: none;
+
+    @media (max-width: $lg) {
+      @include min-height(40vh);
+    }
+
+    @media (max-width: $md) {
+      @include min-height(30vh);
+    }
+
+    @media (max-width: $xs) {
+      @include min-height(20vh);
+    }
+
   }
 }

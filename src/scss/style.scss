@@ -1,20 +1,19 @@
-//common
-@import "common";
-
 //variables
-@import "variables";
+@import "pressets/variables";
+@import "pressets/skin";
 
 //mixins
-@import "mixins";
+@import "mixin/mixins";
+
+//common
+@import "common/common";
 
 //header
-@import "header";
+@import "header/header";
+@import "header/navbar";
 
 //main
-@import "main";
+@import "main/main";
 
 //footer
-@import "footer";
-
-//media config
-@import "media";
+@import "footer/footer";

@@ -4,40 +4,6 @@
   @include padding-bottom(141px);
 }
 
-.navbar {
-  margin-bottom: 162px;
-
-  &__list {
-    @include display(flex);
-    column-gap: 22.6px;
-    @include font-size(16px);
-    line-height: $line-height-sm;
-    letter-spacing: $letter-spacing;
-    font-weight: $font-weight-regular;
-    flex-wrap: wrap;
-  }
-
-  &__link {
-    color: $color-black;
-    @include display(block);
-    @include padding($gap-sm);
-    transition: scale 0.25s;
-  }
-
-  &__link:hover {
-    color: $color-black;
-    transform: scale(1.1);
-  }
-
-  &__link--active {
-    color: $color-accent;
-  }
-}
-
-.one {
-  color: $color-accent;
-}
-
 .content {
   max-width: 550px;
   @include display(flex);
